@@ -44,7 +44,21 @@
 
         /* Seletor Atibuto*/
         [title]{
+            color: rgb(0, 38, 255);
+        }
+        /* atributo especifico com valor */
+        [title="Netflix"]{
             color: red;
+        }
+        [title~="Steaming"]{
+            background-color: blueviolet;
+        }
+        /* com sufixo nome- (palavra seguida do hifen) */
+        [title|="Aqui"]{
+            background-color: green;
+        }
+        [href^="http://"]{
+            background: ;
         }
     </style>
 </head>
@@ -65,6 +79,21 @@
             <li>
                 <a title="Google" href="www.google.com">
                     Google
+                </a>
+            </li>
+            <li>
+                <a title="Steaming Netflix" href="www.google.com">
+                    Netflix
+                </a>
+            </li>
+            <li>
+                <a title="Steaming Prime" href="www.google.com">
+                    Prime
+                </a>
+            </li>
+            <li>
+                <a title="Aqui-Steaming Spotify" href="www.google.com">
+                    SPOTIFY
                 </a>
             </li>
         </ul>
