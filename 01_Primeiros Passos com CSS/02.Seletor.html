@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        /* Seletor de Tag/Tipo */
+        h1{
+            background-color: blueviolet;
+            color: aquamarine;
+        }
+        div {
+            background-color: lightblue;
+            color: darkblue;
+        }
+        li{
+            background-color: lightseagreen;
+        }
+
+        /* Seletor de id*/
+        #texto-boas-vindas {
+            background-color: firebrick;
+            color: white;
+        }
+        #explicacao-seletores{
+            color: chocolate;
+        }
+
+        /* Seletor de Class*/
+        .seletores-mais-comuns{
+            background-color: darkred;
+            color: white;
+        }
+        .texto-maiusculo{
+            text-transform: uppercase;
+        }
+
+        /* Seletor Universal*/
+        *{
+            background-color: darkgray;
+        }
+
+        /* Seletor Atibuto*/
+        [title]{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seletores CSS</h1>
+    <p id="texto-boas-vindas">Bem-Vindo</p>
+    <p id="explicacao-seletores">No CSS nós possuimos os seletores por ID</p>
+    <div>
+        <p>Olá tudo bem?</p>
+        <ul>
+            <li class="seletores-mais-comuns texto-maiusculo"><b>Seletores por Tipo:</b> Busca elementos por uma tag HTML especifica</li>
+            <li><b>Seletores por ID (#):</b> Busca elementos por atravez do atributo "id"</li>
+            <li><b>Seletores por Class (.):</b> Busca elementos por atravez do atributo "class"</li>
+            <li><b>Seletores por Universal (*):</b> Seleciona todos os elementos HTML</li>
+            <li><b>Seletor de Atributo ([atrib]):</b> Seleciona alementos que possuem um atributo especifico em nosso documento HTML e conseguimos também atributos com um valor especifico</li>
+        </ul>
+        <ul>
+            <li>
+                <a title="Google" href="www.google.com">
+                    Google
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
